@@ -1,37 +1,11 @@
-﻿# agencia-api-rest
+﻿# cleanarch
 
 > Descrição:
-### API Rest desenvolvida para realizar o CRUD (create, read, update, delete) de serviços de viagem. Utilizando recursos do node.js com express, sequelize (para trabalhar com serviços do banco de dados), o SGBD é o postgres, biblioteca Multer para fazer upload de arquivos e documentação em Swagger.
+### Aplicação de Clean Architeture com Spring Boot, a api desenvolvida realiza o crud de clientes incluindo seu endereço durante o cadastro ou edição.
 
-![Captura de tela 2025-07-06 184708](https://github.com/user-attachments/assets/90fb95ff-ea18-46f5-81a9-6e6225b9bc0d)
-![Captura de tela 2025-07-06 184802](https://github.com/user-attachments/assets/f7689ee6-baf0-4686-94df-5397a09bcdc1)
+> O que foi desenvolvido:
 
-> Pré-execução:
-
-## Crie o .env e preencha:
-~~~
-DATABASE=viagem
-DATABASE_HOST=127.0.0.1
-DATABASE_PORT=3306
-DATABASE_USERNAME=root
-DATABASE_PASSWORD=123456
-
-TOKEN_SECRET=aosdjfo4a354asdfasjfaois6ASDFasdfasdA879
-TOKEN_EXPIRATION=7d # tempo de expiração
-
-APP_URL=http://localhost
-APP_PORT=3001
-~~~
-
-> Execução:
-
-### Instale as bibliotecas:
-~~~
-npm i
-~~~
-
-### Execute o seguinte comando:
-~~~
-npm run dev
-~~~
-
+#### - API Spring Boot com padrão RESTful;
+#### - Aplicação de Clean Architeture com utilização de Orientação a Objetos;
+#### - Microserviço para realizar a verificação de cep por meio de outra api;
+#### - Utilização de Kafka para criar "filas" de cep's que serão verificados e as mensagens (eventos) serão armazenadas.
